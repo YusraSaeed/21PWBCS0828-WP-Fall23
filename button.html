@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Button</title>
+	<script>
+		function addParagraphText(){
+			document.getElementById("para").innerHTML = "Thank you for clicking me!";
+		}
+		function displayDate(){
+			document.getElementById("date").innerHTML = Date();
+		}
+		
+		function displayInput(){
+			var input = document.getElementById("userInput").value;
+			if(input.length == 0)
+				document.getElementById("response").innerHTML = "Hey, you didn't enter any text!";
+			else
+				document.getElementById("response").innerHTML = "Hello" + " " + input;
+		}
+	</script>
+</head>
+
+<body>
+	<h1 style = "color:Tomato;">This is a button</h1>
+	<button onclick = "addParagraphText();">Click me</button>
+	<p id = "para"></p>
+	
+	<br>
+	
+	<h1 style = "color:rgb(23,74,25);">My Second Button</h2>
+	<Button type = "button" onclick ="displayDate();">Click me to display date and time</button>
+	<p id = "date"></p>
+	
+	<br>
+	
+	<h1 style = "color:rgb(23,223, 170);">User Input Button</h1>
+	<input id = "userInput" type = "text">
+	<button type = "button" onclick = "displayInput();">Click me </Button>
+	<p id = "response"></p>
+</body>
+</html>
