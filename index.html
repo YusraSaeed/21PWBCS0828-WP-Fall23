@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="/submit" method="post">
+            <label for = "name">Full Name</label><br>
+            <input type = "text" id = "name" name = "name"><br><br>
+            
+            <label for = "email">Email</label><br>
+            <input type="email" id = "email" name = "email"><br><br>
+
+            <label for = "number">Phone Number</label><br>
+            <input type = "tel" id = "number" name = "number"><br><br>
+
+            <label for = "dob">Date of Birth</label><br>
+            <input type = "date" id = "dob" name = "dob"><br><br>
+
+            <label for = "gender">Gender</label><br>
+
+            <input type = "radio" id = "male" name = "male">
+            <label for = "male">Male</label><br>
+            <input type = "radio" id = "female" name="female">
+            <label for = "female">Female</label><br>
+            <input type = "radio" id = "other" name = "other">
+            <label for = "other">Other</label><br><br>
+
+            <label for ="course">Course</label><br>
+            <select id = "course" name = "course">
+                <option value = "Engineering">Engineering</option>
+                <option value = "Business">Business</option>
+                <option value = "Medicine">Medicine</option>
+                <option value = "Arts">Arts</option>
+            </select><br><br>
+
+            <label for = "resume">Upload Resume</label><br>
+            <input type = "file" id = "resume" name = "resume"><br><br>
+
+            <label for = "comments">Additional Comments</label><br>
+            <textarea id = "comments" name = "comments" rows = "5" cols = "50"></textarea><br><br>
+
+            <label for = "subscribe">Subscribe to Newsletter</label>
+            <input type = "checkbox" id = "subscribe" name = "subscribe" value="yes"><br><br>
+
+            <button type = "submit" id = "submitButton" name = "submit">Submit</button>
+        </form>  
+    </body>
+</html>
